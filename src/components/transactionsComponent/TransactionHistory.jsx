@@ -6,7 +6,7 @@ const Transactions = ({ items }) => {
   return (
     <table class="transaction-history">
       <thead>
-        <tr>
+        <tr style={{ color: 'white' }}>
           <th>Type</th>
           <th>Amount</th>
           <th>Currency</th>
@@ -26,8 +26,9 @@ const Transactions = ({ items }) => {
 };
 
 Transactions.propTypes = {
-  //   title: PropTypes.string,
-  //   stats: propTypes.array.isRequired,
+  type: propTypes.string.isRequired,
+  amount: propTypes.number.isRequired,
+  currency: propTypes.string.isRequired,
 };
 
 export default Transactions;
