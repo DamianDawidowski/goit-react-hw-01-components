@@ -1,5 +1,5 @@
 import userInfo from './user.json';
-import css from './Profile.css';
+import './Profile.css';
 import propTypes from 'prop-types';
 
 const Profile = ({
