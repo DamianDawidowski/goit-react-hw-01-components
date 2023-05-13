@@ -1,5 +1,6 @@
 import Profile from "./profileComponent/Profile";
 
+
 export const App = () => {
   return (
     <div
@@ -14,7 +15,6 @@ export const App = () => {
     >
       {' '}
       <Profile />
-      React homework template
-    </div>
+     </div>
   );
 };

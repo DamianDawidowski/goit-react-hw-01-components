@@ -1,0 +1,78 @@
+:root {
+  --greyBlue1: rgb(232, 236, 244);
+  --greyBlue2: rgb(139, 139, 173);
+  --greyBlue3: rgb(207, 213, 224);
+}
+
+li {
+  width: 295px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-right: 2px solid var(--greyBlue3);
+  padding: 50px 0;
+  background-color: ghostwhite;
+}
+p {
+  margin: 0%;
+  padding: 30px;
+}
+.profile {
+  background-color: var(--greyBlue1);
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.description {
+  background-color: white;
+  min-width: 900px;
+  margin: 300px 300px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px 20px 0 0;
+  border: 5px solid var(--greyBlue3);
+  border-bottom: 2px solid var(--greyBlue3);
+  padding-bottom: 50px;
+}
+
+.avatar {
+  border-radius: 50%;
+  padding: 150px 150px 100px;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 80px;
+}
+.tag,
+.location {
+  /* color: var(--greyBlue); */
+  color: var(--greyBlue2);
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.stats {
+  background-color: ghostwhite;
+  color: var(--greyBlue2);
+  display: flex;
+  margin: 0;
+  justify-content: space-between;
+  align-items: center; 
+  min-width: 900px;
+  border-radius: 0 0 20px 20px;
+  padding-left: 0;
+  border: 5px solid var(--greyBlue3);
+  border-top: 0;
+}
+.quantity {
+  font-weight: 800;
+  color: black;
+  padding-top: 30px
+}
