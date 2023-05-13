@@ -1,9 +1,7 @@
-//  import friendsInfo from './friends.json';
 import './FriendList.css';
-// import propTypes from 'prop-types';
-import FriendListItem from './FriendListItem';
-import friends from './friends.json'
 
+import propTypes from 'prop-types';
+import FriendListItem from './FriendListItem';
 
 const FriendList = ({ friends }) => {
   return (
@@ -22,20 +20,8 @@ const FriendList = ({ friends }) => {
   );
 };
 
-
-
-
-
-
-// FriendList.propTypes = {
-//   userImage: propTypes.string.isRequired,
-//   tag: propTypes.string.isRequired,
-//   name: propTypes.string.isRequired,
-//   location: propTypes.string.isRequired,
-
-//   followers: propTypes.number.isRequired,
-//   views: propTypes.number.isRequired,
-//   likes: propTypes.number.isRequired,
-// };
+FriendList.propTypes = {
+  friends: propTypes.array.isRequired,
+};
 
 export default FriendList;

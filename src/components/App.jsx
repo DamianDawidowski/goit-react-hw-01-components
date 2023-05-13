@@ -1,10 +1,13 @@
-import FriendList from "./friendListComponent/FriendList";
-import Profile from "./profileComponent/Profile";
+import FriendList from './friendListComponent/FriendList';
+import Profile from './profileComponent/Profile';
 import userInfo from '../components/profileComponent/user.json';
+import friends from '../components/friendListComponent/friends.json';
+import Statistics from './statisticsComponent/Statistics';
+import stats from '../components/statisticsComponent/data.json';
+
 
 export const App = () => {
-
-    const { username, tag, location, avatar, stats } = userInfo;
+  const { username, tag, location, avatar, stats } = userInfo;
   return (
     <div
       style={{
@@ -16,18 +19,17 @@ export const App = () => {
         color: '#010101',
       }}
     >
-      
       <Profile
-        userImage={avatar} 
-      tag = {tag} 
-      name = {username} 
-      location = {location} 
-      followers = { stats.followers} 
-      views = { stats.views} 
-       likes = { stats.likes} 
-       
+        userImage={avatar}
+        tag={tag}
+        name={username}
+        location={location}
+        followers={stats.followers}
+        views={stats.views}
+        likes={stats.likes}
       />
-      {/* <FriendList /> */}
+      <Statistics friends={friends} />
+      <FriendList friends={friends} />
     </div>
   );
 };
