@@ -1,0 +1,33 @@
+import './Transactions.css';
+
+import propTypes from 'prop-types';
+
+const Transactions = ({ items }) => {
+  return (
+    <table class="transaction-history">
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Amount</th>
+          <th>Currency</th>
+        </tr>
+      </thead>
+      <tbody>
+        {items.map(({ id, type, amount, currency }) => (
+          <tr key={id}>
+            <td>{type}</td>
+            <td>{amount}</td>
+            <td>{currency}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  );
+};
+
+Transactions.propTypes = {
+  //   title: PropTypes.string,
+  //   stats: propTypes.array.isRequired,
+};
+
+export default Transactions;
