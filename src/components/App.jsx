@@ -3,11 +3,12 @@ import Profile from './profileComponent/Profile';
 import userInfo from '../components/profileComponent/user.json';
 import friends from '../components/friendListComponent/friends.json';
 import Statistics from './statisticsComponent/Statistics';
-import stats from '../components/statisticsComponent/data.json';
+import statsData from '../components/statisticsComponent/data.json';
 
 
 export const App = () => {
   const { username, tag, location, avatar, stats } = userInfo;
+  const {  title, data } = statsData;
   return (
     <div
       style={{
@@ -28,7 +29,10 @@ export const App = () => {
         views={stats.views}
         likes={stats.likes}
       />
-      <Statistics friends={friends} />
+
+      <Statistics title="Upload stats" stats={statsData} />
+   
+
       <FriendList friends={friends} />
     </div>
   );
