@@ -17,8 +17,6 @@ li {
 
 .profile {
   background-color: var(--greyBlue1);
-  /* margin: auto; */
-  /* width: 100%; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -31,7 +29,7 @@ li {
   margin: 100px 100px 0;
   display: flex;
   flex-direction: column;
-  justify-content:flex-end;
+  justify-content: flex-end;
   align-items: center;
   border-radius: 20px 20px 0 0;
   border: 5px solid var(--greyBlue3);
@@ -41,8 +39,6 @@ li {
 
 .avatar {
   border-radius: 50%;
-  /* padding: 150px 150px 100px; */
-  /* width:250px; */
 }
 
 .name {
@@ -55,19 +51,18 @@ li {
   color: var(--greyBlue2);
   font-size: 18px;
   font-weight: 500;
-  
+
   margin: 0%;
   padding: 10px;
- 
 }
 
 .stats {
   background-color: ghostwhite;
   color: var(--greyBlue2);
   display: flex;
-  margin:  0 0 100px  ;
+  margin: 0 0 100px;
   justify-content: space-between;
-  align-items: center; 
+  align-items: center;
   min-width: 350px;
   border-radius: 0 0 20px 20px;
   padding-left: 0;
@@ -77,10 +72,10 @@ li {
 .quantity {
   font-weight: 800;
   color: black;
-  padding-top: 30px
+  padding-top: 30px;
 }
 
-.label, .quantity {
-font-size: 18px;
-
+.label,
+.quantity {
+  font-size: 18px;
 }

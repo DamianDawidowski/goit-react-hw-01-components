@@ -1,6 +1,6 @@
 import FriendList from './friendListComponent/FriendList';
-import Profile from './profileComponent/Profile';
 import userInfo from '../components/profileComponent/user.json';
+import Profile from './profileComponent/Profile';
 import friends from '../components/friendListComponent/friends.json';
 import Statistics from './statisticsComponent/Statistics';
 import statsData from '../components/statisticsComponent/data.json';
@@ -9,7 +9,6 @@ import items from '../components/transactionsComponent/transactions.json';
 
 export const App = () => {
   const { username, tag, location, avatar, stats } = userInfo;
-  // const {  title, data } = statsData;
   return (
     <div
       style={{

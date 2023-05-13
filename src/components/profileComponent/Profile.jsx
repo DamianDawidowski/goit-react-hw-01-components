@@ -1,4 +1,3 @@
-
 import './Profile.css';
 import propTypes from 'prop-types';
 
@@ -38,13 +37,12 @@ const Profile = ({
 
 Profile.propTypes = {
   userImage: propTypes.string.isRequired,
-  tag: propTypes.string.isRequired,
+  tag: propTypes.string,
   name: propTypes.string.isRequired,
-  location: propTypes.string.isRequired,
-
-  followers: propTypes.number.isRequired,
-  views: propTypes.number.isRequired,
-  likes: propTypes.number.isRequired,
+  location: propTypes.string,
+  followers: propTypes.number,
+  views: propTypes.number,
+  likes: propTypes.number,
 };
 
 export default Profile;
