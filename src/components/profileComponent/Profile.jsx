@@ -1,15 +1,15 @@
-import userInfo from './user.json';
+
 import './Profile.css';
 import propTypes from 'prop-types';
 
 const Profile = ({
-  userImage = userInfo.avatar,
-  tag = userInfo.tag,
-  name = userInfo.username,
-  location = userInfo.location,
-  followers = userInfo.stats.followers,
-  views = userInfo.stats.views,
-  likes = userInfo.stats.likes,
+  userImage,
+  tag,
+  name,
+  location,
+  followers,
+  views,
+  likes,
 }) => (
   <div class="profile">
     <div class="description">
