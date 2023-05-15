@@ -6,9 +6,7 @@ const Profile = ({
   tag,
   name,
   location,
-  followers,
-  views,
-  likes,
+  stats,
 }) => (
   <div class="profile">
     <div class="description">
@@ -21,15 +19,15 @@ const Profile = ({
     <ul class="stats">
       <li>
         <span class="label">Followers</span>
-        <span class="quantity">{followers}</span>
+        <span class="quantity">{stats.followers}</span>
       </li>
       <li>
         <span class="label">Views</span>
-        <span class="quantity">{views}</span>
+        <span class="quantity">{stats.views}</span>
       </li>
       <li>
         <span class="label">Likes</span>
-        <span class="quantity">{likes}</span>
+        <span class="quantity">{stats.likes}</span>
       </li>
     </ul>
   </div>
@@ -46,3 +44,4 @@ Profile.propTypes = {
 };
 
 export default Profile;
+ 
