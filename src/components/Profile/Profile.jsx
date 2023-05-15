@@ -1,4 +1,4 @@
-import './Profile.css';
+import './Profile.module.css';
 import propTypes from 'prop-types';
 
 const Profile = ({ userImage, tag, name, location, stats }) => (
