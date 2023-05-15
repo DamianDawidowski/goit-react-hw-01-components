@@ -1,4 +1,3 @@
-import './Transactions.module.css';
 import css from './Transactions.module.css';
 import propTypes from 'prop-types';
 
